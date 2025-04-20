@@ -7,6 +7,17 @@
     <title>YEMANE BAKERY</title>
     <link rel="stylesheet" href="styles.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,14 +30,13 @@
     <link rel="stylesheet" href="css/styles.css">
 
   </head>
-  <body>
+  <body>    
 
     <!-- Nav Bar section -->
     <nav class="navbar">
       <div class="navbar__container">
         <a href="index.html" id="navbar__logo">
-          <img src="images/OIG-3.jpg" alt="Logo" class="logo-img" />
-          YEMANE BAKERY
+          <img src="images/OIG-3.jpg" alt="Logo" class="logo-img" />YEMANE BAKERY
         </a>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span>
@@ -61,7 +71,7 @@
           <h1>WORLD CLASS</h1>
           <h2>DESSERTS</h2>
           <p>See what makes us different.</p>
-          <button class="main__btn"><a href="/">Check it out</a></button>
+          <button class="main__btn"><a href="#Service Card Recipes">Check it out</a></button>
         </div>
         <div class="main__img-container">
           <img src="images/baking.svg" alt="pic" id="main__img" />
@@ -72,12 +82,12 @@
     
     <!-- Services -->
 <section class="services">
-  <h1>See what the hype is about</h1>
+  <h1 id = "Service Card Recipes">See what the hype is about</h1>
   <h3>Check out the Recipes we have in store just for YOU!</h3>
   
 
   <div class="services__container">
-    <div class="services__card" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(17, 17, 17, 0.8)), url('images/poundcake1.png');">
+    <div class="services__card" style="background-image: url('images/poundcake1.png');">
       <div class="card-content">
         <h2>Pound Cake</h2>
         <p>Rich, buttery pound cake baked to perfection.</p>
@@ -85,7 +95,7 @@
       </div>
     </div>
 
-    <div class="services__card" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(17, 17, 17, 0.8)), url('images/Brownies.png');">
+    <div class="services__card" style="background-image: url('images/Brownies.png');">
       <div class="card-content">
         <h2>Brownies</h2>
         <p>Fudgy, chocolatey brownies you'll crave daily.</p>
@@ -93,7 +103,7 @@
       </div>
     </div>
 
-    <div class="services__card" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(17, 17, 17, 0.8)), url('images/snickerdoodles.webp');">
+    <div class="services__card" style="background-image: url('images/snickerdoodles.webp');">
       <div class="card-content">
         <h2>Snickerdoodles</h2>
         <p>Fresh-baked cookies with soft interior and crisp exterior.</p>
@@ -116,30 +126,36 @@
       <div class="social__media">
         <div class="social__media--wrap">
           <div class="footer__logo">
-            
-            <a href="/" id="footer__logo"><i class="fas fa-gem"></i>YEMANE BAKERY</a>
+            <a href="index.html" id="footer__logo">
+              <img src="images/YB-B&W.JPG" alt="Logo" class="logo-img" />YEMANE BAKERY
+            </a>
           </div>
           <p class="website__rights">YEMANE BAKERY 2023. All rights reserved</p>
           <div class="social__icons">
-            <a href="/" class="social__icons" target="_blank">
-              <i class="fab fa-facebook"></i>
+            <a href="https://github.com/joshyemane" class="social__icons" target="_blank">
+              <i class="fab fa-github"></i>
             </a>
-            <a href="/" class="social__icons" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="/" class="social__icons" target="_blank">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="/" class="social__icons" target="_blank">
+            <a href="https://www.linkedin.com/in/joshua-yemane/" class="social__icons" target="_blank">
               <i class="fab fa-linkedin"></i>
             </a>
-            <a href="/" class="social__icons" target="_blank">
+            <a href="https://www.youtube.com/@Urtoomuchjosh" class="social__icons" target="_blank">
               <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" onclick="event.preventDefault();" class="social__icons" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" onclick="event.preventDefault();" class="social__icons" target="_blank">
+              <i class="fab fa-instagram"></i>
             </a>
           </div>
         </div>
       </div>
     </div>
+
+
+    <canvas id="breadCanvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999;"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
 
     <script src="app.js"></script>
   </body>
