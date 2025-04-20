@@ -6,7 +6,7 @@
 }
 
 .navbar {
-  background: #131313;
+  background: #030017;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -43,8 +43,13 @@
   font-size: 2rem;
 }
 
-.fa-gem {
+
+.logo-img {
+  width: 45px;
+  height: 45px;
   margin-right: 0.5rem;
+  border-radius: 6px; /* or 50% for a circle */
+  object-fit: cover;
 }
 
 .navbar__menu {
@@ -230,7 +235,9 @@
   z-index: 1;
   width: 100%;
   max-width: 1300px;
-  padding: 0 50px;
+  padding: 50px;
+  padding-top: 4rem;
+  padding-bottom: 50rem;
 }
 
 .main__content h1 {
