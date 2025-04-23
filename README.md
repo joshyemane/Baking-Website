@@ -4,4 +4,4 @@ This website provides recipes for the most delicious recipes to desserts using H
 
 [https://yemanebakery.pages.dev/](https://yemanebakery.pages.dev/)
 
-*If the website does not load from the link, clone the repository to run the website.
+*If the website does not load from the link, clone the repository and open "index.html" to run the website.
