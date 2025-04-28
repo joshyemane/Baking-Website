@@ -43,12 +43,11 @@
   font-size: 2rem;
 }
 
-
 .logo-img {
   width: 45px;
   height: 45px;
   margin-right: 0.5rem;
-  border-radius: 6px; /* or 50% for a circle */
+  border-radius: 6px;
   object-fit: cover;
 }
 
@@ -114,26 +113,23 @@
   right: 1rem;
   justify-content: space-between;
   align-items: center;
-  width: 30;
+  width: 30px;
   height: 21px;
+  cursor: pointer;
 }
 
 .navbar__toggle .bar {
   height: 3px;
-  width: 100%;
+  width: 25px;
   background-color: white;
   border-radius: 10px;
+  margin: 4px 0;
 }
 
 @media screen and (max-width: 960px) {
-  .navbar__container {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0;
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .navbar__menu {
@@ -150,60 +146,32 @@
     background: #131313;
   }
 
-  .navbar__toggle {
-    display: flex;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .navbar__menu.active {
-    display: flex;
-  }
-
-  #navbar__logo {
-    padding-left: 25px;
-  }
-
-  .navbar__toggle.bar {
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background: #fff;
+    top: 80px;
+    opacity: 1;
+    z-index: 99;
   }
 
   .navbar__item {
     width: 100%;
   }
 
-  .navbar__links ul {
+  .navbar__links {
     text-align: center;
     padding: 2rem;
     width: 100%;
-    display: none;
-  }
-
-  .navbar__link li a {
-    text-align: center;
-  }
-
-  #mobile-menu {
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    transform: translate(5%, 20%);
+    display: table;
   }
 
   .navbar__btn {
-    padding-bottom: 2rem;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
-  .navbar__toggle.bar {
-    display: block;
-    cursor: pointer;
+  .navbar__toggle {
+    display: flex;
   }
 
   #mobile-menu.is-active .bar:nth-child(2) {
@@ -221,7 +189,7 @@
 
 /* Hero Section CSS */
 .main {
-  background-color: #141414;
+  background-color: #ffffff;
 }
 
 .main__container {
